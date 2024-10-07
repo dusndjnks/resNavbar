@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className='bg-gradient-to-r from-cyan-500 to-pink-500 text-white px-3'>
         <div className='max-w-7xl mx-auto flex justify-between items-center h-24'>
-            <h1 className='text-6xl'>MHD</h1>
+            <h1 className='text-6xl font-mono'>MHD</h1>
            <div className='flex items-center gap-4'>
            <ul className={`flex flex-col lg:flex-row duration-500 lg:static gap-4 text-2xl absolute  lg:text-white top-24 text-black ${extendNavbar ? "left-10" : "left-[-100px]"} `}>
                 <li>Home</li>
