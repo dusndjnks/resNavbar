@@ -15,12 +15,12 @@ const Navbar = () => {
         <div className='max-w-7xl mx-auto flex justify-between items-center h-24'>
             <h1 className='text-5xl font-sans'>Luna Latte</h1>
            <div className='flex items-center gap-4'>
-           <ul className={`flex flex-col lg:flex-row duration-500 lg:static gap-4 text-2xl absolute  lg:text-white top-24 text-black ${extendNavbar ? "left-10" : "left-[-100px]"} `}>
+           <ul className={`flex flex-col lg:flex-row duration-500 lg:static gap-4 text-2xl absolute  lg:text-white top-24 text-black ${extendNavbar ? "left-10" : "left-[-200px]"} `}>
                 <li className='cursor-pointer hover:underline '>Home</li>
                 {
                   isLoggedIn ? 
                   (
-                    <div className='flex gap-4'>
+                    <div className='flex gap-4 lg:flex-row flex flex-col'>
                       <li className='cursor-pointer hover:underline '>About</li>
                       <li className='cursor-pointer hover:underline '>Career</li>
                       <li onClick={logout} className='cursor-pointer hover:underline '>Logout</li>
@@ -28,7 +28,7 @@ const Navbar = () => {
                   ) 
                   : 
                   (
-                    <div className='flex gap-4'>
+                    <div className='flex gap-4 lg:flex-row flex flex-col'>
                       <li className='cursor-pointer hover:underline' onClick={login}>Login</li>
                       <li className='cursor-pointer hover:underline' >Signup</li>
                     </div>
